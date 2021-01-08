@@ -9,22 +9,46 @@
             <table class="table">
                 <thead>
                 <tr>
-                <th scope="col">#</th>
-                <th scope="col">Sepal length</th>
-                <th scope="col">Sepal width</th>
-                <th scope="col">Petal length</th>
-                <th scope="col">Petal width</th>
-                <th scope="col">Prediction</th>
+                <th scope="col">ID</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Age</th>
+                <th scope="col">Height</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Family history with overweight</th>
+                <th scope="col">Frequent consumption of high caloric food</th>
+                <th scope="col">Frequency of consumption of vegetables</th>
+                <th scope="col">Number of main meals</th>
+                <th scope="col">Consumption of food between meals</th>
+                <th scope="col">Smoke</th>
+                <th scope="col">Consumption of water daily</th>
+                <th scope="col">Calories consumption monitoring</th>
+                <th scope="col">Physical activity frequency</th>
+                <th scope="col">Time using technology devices</th>
+                <th scope="col">Consumption of alcohol</th>
+                <th scope="col">Means of transport</th>
+                <th scope="col">Prediction of Obesity</th>
                 </tr>
                 </thead>
                 <tbody>
                 {% for data in dataset %}
                     <tr>
                     <th scope="row">{{ data.id }}</th>
-                    <td>{{ data.sepal_length }}</td>
-                    <td>{{ data.sepal_width }}</td>
-                    <td>{{ data.petal_length }}</td>
-                    <td>{{ data.petal_width }}</td>
+                    <td>{{ data.gender }}</td>
+                    <td>{{ data.age }}</td>
+                    <td>{{ data.height }}</td>
+                    <td>{{ data.weight }}</td>
+                    <td>{{ data.family_history_with_overweight }}</td>
+                    <td>{{ data.frequent_consumption_of_high_caloric_food }}</td>
+                    <td>{{ data.frequency_of_consumption_of_vegetables }}</td>
+                    <td>{{ data.number_of_main_meals }}</td>
+                    <td>{{ data.consumption_of_food_between_meals }}</td>
+                    <td>{{ data.smoke }}</td>
+                    <td>{{ data.consumption_of_water_daily }}</td>
+                    <td>{{ data.calories_consumption_monitoring }}</td>
+                    <td>{{ data.physical_activity_frequency }}</td>
+                    <td>{{ data.time_using_technology_devices }}</td>
+                    <td>{{ data.consumption_of_alcohol }}</td>
+                    <td>{{ data.means_of_transport }}</td>
                     <td>{{ data.classification }}</td>
                     </tr>
                 {% endfor %}
