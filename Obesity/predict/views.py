@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import pandas as pd
 from .models import PredResults
+import os
 
 def predict(request):
     return render(request, 'predict.html')
@@ -108,7 +109,7 @@ def predict_chances(request):
 
 
         # Unpickle model
-        model = pd.read_pickle("D:/Thomas/Bureau/Python for Data Analysis/Obesity_Data_Analysis/new_model.pickle")
+        model = pd.read_pickle(os.getcwd()+"\\predict\\new_model.pickle")
         # Make prediction
         result = model.predict([[gender, age, height, weight,family_history_with_overweight, frequent_consumption_of_high_caloric_food, frequency_of_consumption_of_vegetables, number_of_main_meals,consumption_of_food_between_meals, smoke, consumption_of_water_daily, calories_consumption_monitoring,physical_activity_frequency, time_using_technology_devices, consumption_of_alcohol, MTRANS_Automobile, MTRANS_Bike, MTRANS_Motorbike, MTRANS_Public_Transportation, MTRANS_Walking]])
 
