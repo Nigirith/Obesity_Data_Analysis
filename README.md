@@ -4,7 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [🐣 Introduction](#-introduction)
+- [🚀 Introduction](#-introduction)
 - [🎯 Objectives](#-objectives)
 - [🔎 Steps to find our work](#-steps-to-find-our-work)
   - [📊 Step 1 - Data Analysis](#-step-1---data-analysis)
@@ -20,7 +20,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## 🐣 Introduction
+## 🚀 Introduction
 
 Ce [repository](https://github.com/Thomas-ROUX-Ominga/Obesity_Data_Analysis) est un projet éducatif réalisé à l'[ESILV](https://esilv.fr) dont le but est d'utiliser Python pour faire de l'analyse de données.
 
